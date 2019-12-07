@@ -14,7 +14,7 @@ var testElements = [
       tag: "input",
       types: [],
       testData: [
-        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty"},
+        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty", testDisabledAndReadonly: false},
         {conditions: {message: ""}, expected: false, name: "[target] The validity.customError must be false if the custom validity error message is empty"}
       ]
     },
@@ -22,7 +22,7 @@ var testElements = [
       tag: "button",
       types: [],
       testData: [
-        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty"},
+        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty", testDisabledAndReadonly: false},
         {conditions: {message: ""}, expected: false, name: "[target] The validity.customError must be false if the custom validity error message is empty"}
       ]
     },
@@ -30,7 +30,7 @@ var testElements = [
       tag: "select",
       types: [],
       testData: [
-        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty"},
+        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty", testDisabledAndReadonly: false},
         {conditions: {message: ""}, expected: false, name: "[target] The validity.customError must be false i the custom validity error message is empty"}
       ]
     },
@@ -38,7 +38,7 @@ var testElements = [
       tag: "textarea",
       types: [],
       testData: [
-        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty"},
+        {conditions: {message: "My custom error"}, expected: true, name: "[target] The validity.customError must be true if the custom validity error message is not empty", testDisabledAndReadonly: false},
         {conditions: {message: ""}, expected: false, name: "[target] The validity.customError must be false if the custom validity error message is empty"}
       ]
     }

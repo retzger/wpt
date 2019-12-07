@@ -132,7 +132,7 @@
       testData: [
         {conditions: {required: false, checked: false, name: "test4"}, expected: false, name: "[target] The required attribute is not set"},
         {conditions: {required: true, checked: true, name: "test5"}, expected: false, name: "[target] The checked attribute is true"},
-        {conditions: {required: true, checked: false, name: "test6"}, expected: true, name: "[target] The checked attribute is false"}
+        {conditions: {required: true, checked: false, name: "test6"}, expected: true, name: "[target] The checked attribute is false", testDisabledAndReadonly: false}
       ]
     },
     {
@@ -149,8 +149,8 @@
       types: [],
       testData: [
         {conditions: {required: false, value: ""}, expected: false, name: "[target] The required attribute is not set"},
-        {conditions: {required: true, value: 1}, expected: false, name: "[target] Selected the option with value equals to 1"},
-        {conditions: {required: true, value: ""}, expected: true, name: "[target] Selected the option with value equals to empty"}
+        {conditions: {required: true, value: 1}, expected: false, name: "[target] Selected the option with value equals to 1", testDisabledAndReadonly: false},
+        {conditions: {required: true, value: ""}, expected: true, name: "[target] Selected the option with value equals to empty", testDisabledAndReadonly: false}
       ]
     },
     {
@@ -159,7 +159,7 @@
       testData: [
         {conditions: {required: false, value: ""}, expected: false, name: "[target] The required attribute is not set"},
         {conditions: {required: true, value: "abc"}, expected: false, name: "[target] The value is not empty"},
-        {conditions: {required: true, value: ""}, expected: true  , name: "[target] The value is empty"}
+        {conditions: {required: true, value: ""}, expected: true  , name: "[target] The value is empty", testDisabledAndReadonly: false}
       ]
     }
   ];

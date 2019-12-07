@@ -101,7 +101,7 @@
       tag: "input",
       types: ["checkbox", "radio"],
       testData: [
-        {conditions: {required: true, checked: false, name: "test1"}, expected: false, name: "[target] validity.valid must be false if validity.valueMissing is true"}
+        {conditions: {required: true, checked: false, name: "test1"}, expected: false, name: "[target] validity.valid must be false if validity.valueMissing is true", testDisabledAndReadonly: false}
       ]
     },
     {
@@ -115,14 +115,14 @@
       tag: "select",
       types: [],
       testData: [
-        {conditions: {required: true, value: ""}, expected: false, name: "[target] validity.valid must be false if validity.valueMissing is true"}
+        {conditions: {required: true, value: ""}, expected: false, name: "[target] validity.valid must be false if validity.valueMissing is true", testDisabledAndReadonly: false}
       ]
     },
     {
       tag: "textarea",
       types: [],
       testData: [
-        {conditions: {required: true, value: ""}, expected: false, name: "[target] validity.valid must be false if validity.valueMissing is true"}
+        {conditions: {required: true, value: ""}, expected: false, name: "[target] validity.valid must be false if validity.valueMissing is true", testDisabledAndReadonly: false}
       ]
     }
   ];
